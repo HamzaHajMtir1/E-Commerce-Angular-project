@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
+import { error } from 'console';
 
 @Component({
   selector: 'app-all-products',
@@ -21,7 +22,8 @@ description: any;
   getProducts(){
     this.service.getAllProducts().subscribe((res:any) => {
       this.products = res
-      console.log("response", res);
+    } , error => {
+      alert('Error')
     })
   }
 
