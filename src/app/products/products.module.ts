@@ -7,7 +7,6 @@ import { ProductsDetailsComponent } from './components/products-details/products
 
 @NgModule({
   declarations: [
-    AllProductsComponent,
     ProductsDetailsComponent,
   ],
   imports: [

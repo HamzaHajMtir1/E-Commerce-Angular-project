@@ -9,16 +9,16 @@
         </select>
     </div>
     <div class="row">
-        <div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12" *ngFor="let item of products">
             <div class="item">
-                <img src="test" alt="">
+                <img src="{{item.image}}" alt="">
                 <div class="body">
-                    <h4>Some Title</h4>
-                    <p>Test Add Description</p>
+                    <h4>{{item.title}}</h4>
+                    <p>{{item.description}}</p>
                 </div>
                 <div class="px-3 nb-2 d-flex justify-content-between align-items-center">
                     <button class="btn btn-success">Add To Cart</button>
-                    <span>50 DT</span>
+                    <span>{{item.price}} DT</span>
                 </div>
             </div>
         </div>
