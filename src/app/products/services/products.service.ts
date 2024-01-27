@@ -11,4 +11,10 @@ export class ProductsService {
   getAllProducts() {
     return this.http.get('https://fakestoreapi.com/products')
   }
+  getAllCategories() {
+    return this.http.get('https://fakestoreapi.com/products/categories')
+  }
+  getProductsByCategories(keyword:string) {
+    return this.http.get('https://fakestoreapi.com/products/category/'+keyword)
+  }
 }
