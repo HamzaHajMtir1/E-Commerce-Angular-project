@@ -11,7 +11,7 @@
     width:84px;
     height: 84px;
     border-radius: 50%;
-    background:#FF3D00;
+    background:#0b5295;
     animation: push 1s infinite linear alternate;
   }
   .loader:after {
