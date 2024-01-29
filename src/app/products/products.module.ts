@@ -8,6 +8,7 @@ import { ProductsDetailsComponent } from './components/products-details/products
 @NgModule({
   declarations: [
     ProductsDetailsComponent,
+    AllProductsComponent,
   ],
   imports: [
     CommonModule

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { error, timeStamp } from 'console';
 
@@ -66,5 +66,9 @@ description: any;
       this.loading = false
       alert('Error')
     })
+  }
+
+  addToCart(event:any){
+    console.log(event)
   }
 }
